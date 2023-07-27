@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            border-color: black;
+        }
+        tr td, tr th {
+            border: 1px solid silver;
+        }
+        col.t {
+            background-color: yellow;
+        }
+
+        tr th{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>    
+    <table>
+        <caption>학생 주소록</caption>
+        <colgroup>
+            <col class="t">
+            <col span="2" style="background-color: blue;">
+        </colgroup>
+        <thead>
+            <tr><th>이름</th><th>나이</th><th>주소</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>홍하나</td><td>20</td><td>서울</td></tr>
+            <tr><td>김하나</td><td>20</td><td>경기</td></tr>
+            <tr><td>이하나</td><td>20</td><td>강원</td></tr>
+        </tbody>
+        <tfoot><tr><td>총인원</td><td colspan="2">3</td></tr></tfoot>
+    </table>
+    <br>
+    <table>
+        <colgroup>
+            <col class="t">
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <tbody>
+            <tr><td>1</td><td colspan="2">2</td><td>3</td></tr>
+            <tr><td rowspan="2">4</td><td colspan="3">5</td></tr>
+            <tr><td>6</td><td>7</td><td>8</td></tr>
+        </tbody>
+    </table>
+</body>
+</html>
