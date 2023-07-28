@@ -1,0 +1,54 @@
+div {
+    width: 100px; height: 100px;
+    background: yellow;
+    border: 2px solid blue;
+    float: left;
+    margin-right: 10px;
+}
+
+/* div[title="h1 a3"]{
+    color: brown;
+    font-size: 12px;
+} */
+
+/* div[title~="h1"]{
+    color: brown;
+    font-size: 12px;
+} */
+
+/* div[title~="hello"]{
+    color: brown;
+    font-size: 12px;
+} */
+
+div[title~="h1"]{
+    color: brown;
+    font-size: 12px;
+}
+
+div.clear{
+    clear: both;
+}
+
+a {
+    display: inline-block;
+    width: 100px;
+}
+
+a[href$=".com"] {
+    color: red;
+}
+
+a[href^="http"] {
+    border: 3px solid green;
+}
+
+a[href*="shinhansec"] {
+    background-color: blue;
+    color: white;
+}
+
+/* a[href="https://www.shinhansec.com"] {
+    background-color: blue;
+    color: white;
+} */
