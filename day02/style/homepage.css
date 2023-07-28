@@ -1,10 +1,40 @@
 header {
     background-color: black;
     color: white;
+    text-indent: 15px;
+}
+
+div {
+    margin-left: 20px;
 }
 
 nav ul li a{
     display: inline-block;
     padding:5px 10px;
     margin-right: 10px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+nav {
+    text-align: right;
+    padding-right: 300px;
+}
+
+section {
+    float: left;
+    margin-right: 10px;
+    text-indent: 25px;
+}
+
+footer {
+    clear: both;
+}
+
+hr {
+    color: silver;
+    border-style: solid;
 }
