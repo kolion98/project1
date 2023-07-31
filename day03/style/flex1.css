@@ -1,0 +1,15 @@
+.t {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+#wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    background-color: silver;
+    justify-content: space-evenly;
+}
+
