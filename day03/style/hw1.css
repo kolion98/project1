@@ -95,10 +95,28 @@ article p {
     margin-left: 25px;
 }
 
+article section {
+    width: 50%;
+    margin: 10px 30px;
+    border: 1px solid silver;
+    border-radius: 20px;
+    background-color: white;
+}
+
+article section h5{
+    color: red;
+    margin-left: 40px;
+}
+
+article section p {
+    margin-left: 50px;
+}
+
 footer {
     background-color: skyblue;
+    border-radius: 20px;
 }
 
 footer p{
-    padding: 30px 10px;
+    padding: 30px 0px 30px 30px;
 }
