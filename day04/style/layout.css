@@ -1,0 +1,42 @@
+#wrap {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid silver;
+    padding: 10px 10px;
+}
+
+div.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+header {
+    border: 1px solid silver;
+    margin-bottom: 10px;
+}
+
+aside {
+    width:10%;
+    height: 10%;
+    border: 1px solid silver;
+}
+
+article {
+    width:75%;
+    border: 1px solid silver;
+}
+
+footer {
+    border: 1px solid silver;
+}
+
+footer p {
+    padding: 2vh 2vw;
+}
+
+h1, h2, p ,ul{
+    position: relative;
+    left: 1vw;
+}
