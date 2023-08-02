@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/sidebar.css">
+    <script src="js/sidebar.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="navigation">
+            <div id="navigation_closed">
+                <div>
+                    <span class="span_open">
+                        <img src="image/menu.png" alt="menu" id="nav_open_btn">
+                    </span>
+                </div>
+            </div>
+            <div id="navigation_opened">
+                <div id="nav_title">
+                    <div class="div_title">
+                        New EC2 experience<br>
+                        <small><a href="#">Tell us what you think</a></small>
+                    </div>
+                    <div class="div_close">
+                        <img src="image/cancel.png" alt="cancel" id="nav_close_btn">
+                    </div>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">EC2 대시보드</a></li>
+                        <li><a href="#">EC2 글로벌 보기</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li>
+                            <div class="instance">
+                                <div>
+                                    <div id="instance_toggle">
+                                        인스턴스
+                                    </div>
+                                </div>
+                                <div id="instance_toggle_contents">
+                                    <ul class="inner">
+                                        <li><a href="#">인스턴스</a></li>
+                                        <li><a href="#">인스턴스 유형</a></li>
+                                        <li><a href="#">시작 템플릿</a></li>
+                                        <li><a href="#">스팟 요청</a></li>
+                                        <li><a href="#">Saving Plans</a></li>
+                                        <li><a href="#">예약 인스턴스</a></li>
+                                        <li><a href="#">전용 호스트</a></li>
+                                        <li><a href="#">용량 예약</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="image">
+                                <div>
+                                    <div id="image_toggle">
+                                        이미지
+                                    </div>
+                                </div>
+                                <div id="image_toggle_contents">
+                                    <ul class="inner">
+                                        <li><a href="#">AMI</a></li>
+                                        <li><a href="#">AMI 카탈로그</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ebs">
+                                <div>
+                                    <div id="ebs_toggle">
+                                        Elastic Block Store
+                                    </div>
+                                </div>
+                                <div id="ebs_toggle_contents">
+                                    <ul class="inner">
+                                        <li><a href="#">볼륨</a></li>
+                                        <li><a href="#">스냅샷</a></li>
+                                        <li><a href="#">수명 주기 관리자</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="net_sec">
+                                <div>
+                                    <div id="net_sec_toggle">
+                                        네트워크 및 보안
+                                    </div>
+                                </div>
+                                <div id="net_sec_toggle_contents">
+                                    <ul class="inner">
+                                        <li><a href="#">보안 그룹</a></li>
+                                        <li><a href="#">탄력적IP</a></li>
+                                        <li><a href="#">배치 그룹</a></li>
+                                        <li><a href="#">키 페어</a></li>
+                                        <li><a href="#">네트워크 인터페이스</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lb">
+                                <div>
+                                    <div id="lb_toggle">
+                                        로드 밸런싱
+                                    </div>
+                                </div>
+                                <div id="lb_toggle_contents">
+                                    <ul class="inner">
+                                        <li><a href="#">로드밸런서</a></li>
+                                        <li><a href="#">대상 그룹</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="autoscaling">
+                                <div>
+                                    <div id="autoscaling_toggle">
+                                        Auto Scaling
+                                    </div>
+                                </div>
+                                <div id="autoscaling_toggle_contents">
+                                    <ul class="inner">
+                                        <li><a href="#">Auto Scaling 그룹</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>        
+        <div class="main">
+            Main Contents
+        </div>
+    </div>
+</body>
+</html>

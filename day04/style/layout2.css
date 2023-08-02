@@ -1,0 +1,159 @@
+@media screen and (max-width: 767px)
+       /* screen and (max-height: 479px)
+       and (orientation: landscape)*/ { 
+    
+    #wrap {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .visible {
+        display: block;
+    }
+
+    header {
+        background-color: cadetblue;
+        flex-wrap: nowrap;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin: 1vh 3vw;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    nav {
+        position: absolute;
+        top: 9.4vh;
+        left: 68vw;
+        bottom: 0;
+        width: 30vw;
+        margin: 2vw;
+        background-color: lightslategray;
+        display: none;
+    }
+
+    nav li {
+        list-style: none;
+    }
+
+    nav li a {
+        display: block;
+        padding: 2vh 5vw;
+        font-size: 1.5rem;
+        border-bottom: 1px solid #fff;
+    }
+
+    nav li a:hover {
+        background-color: skyblue;
+        color: purple;
+    }
+
+    ul.list li{
+        display: flex;
+        flex-direction: row;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+
+    .thumb, .title {
+        display: inline-block;
+    }
+
+    .title {
+        position: relative;
+        top: 2vh;
+    }
+
+    .main_menu {
+        display: block;
+        margin-top: 5vh;
+        margin-right: 3vw;
+        width: 30px;
+        height: 30px;
+        color: transparent;
+        background: linear-gradient(#fff 50%, transparent 50%);
+        background-size: 100% 10px;
+    }
+
+    footer p {
+        margin-top: 3vh;
+        padding: 3vh 3vw;
+        font-weight: bolder;
+        background-color: silver;
+    }
+}
+
+@media screen and (min-width: 768px),
+       screen and (min-height: 760px) and (max-height: 1023px) and (orientation: landscape) {
+            
+        #wrap {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: green;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .logo {
+            display: inline-block;
+            position: relative;
+            top: 0.1vh;
+            left: 1vw;
+            width: 4vw;
+            text-decoration: center;
+        }
+
+        .main_menu {
+            display: none;
+        }
+
+        nav.menu {
+            display: inline-block;
+            width: 40%;
+            background-color: transparent;
+        }
+
+        nav.menu ul li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        nav.menu ul li a {
+            display: inline-block;
+            padding: 1vh 1vw;
+            color: white;
+            position: relative;
+            top: 3vh;
+            font-size: 0.6rem;
+        }
+
+        ul.list li{
+            display: inline-block;
+            border: none;
+            border-bottom: 1px solid black;
+            width:30vw;
+        }
+
+        .thumb, .title {
+            display: inline-block;
+        }
+
+}
+
+@media screen and (min-width: 1024px) {
+    
+
+}

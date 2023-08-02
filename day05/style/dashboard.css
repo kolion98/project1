@@ -1,0 +1,34 @@
+#wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+div {
+    border: 1px solid black;
+}
+
+section {
+    border: 1px solid silver;
+}
+
+div.main, div.resource_child footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.main_contents {
+    width: 70%;
+}
+
+aside {
+    width: 28%;
+}
+
+div.child_left, div.child_right {
+    width: 49%
+}
+
+div.resource_child {
+    margin-top: 2%;
+}
