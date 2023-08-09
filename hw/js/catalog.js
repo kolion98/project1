@@ -1,10 +1,3 @@
-
-
-
-
-selector
-
-
 /**
  * 금요일 12시
  * 하단의 스크롤 네모는 selector, option: multiple, size=10
@@ -14,5 +7,17 @@ selector
  * 자료(element)를 더블 클릭하면 자료가 사라지게
  * 키보드로 엔터쳤을때, 추가되면 가산점
  * 교안3번, 45쪽
+ * 
+ * 엔터키 클릭
+ * <script>
+    var input = document.getElementById("myInput");
+
+    input.addEventListener("keyup", function (event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("myBtn").click();
+      }
+    });
+  </script>
  * 
  */
