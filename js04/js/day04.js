@@ -150,21 +150,46 @@
 //     console.log('end!!');
 // }
 
+// let pname = "123";
+// let age = 20;
 
-let pname = "123";
-let age = 20;
-
-try {    
-    if (!Number.isNaN(Number(pname))){
-        throw new Error("이름은 숫자일 수 없습니다!");
-    }
+// try {    
+//     if (!Number.isNaN(Number(pname))){
+//         throw new Error("이름은 숫자일 수 없습니다!");
+//     }
     
-    if (Number.isNaN(age)) {
-        throw new Error("나이는 숫자이어야 합니다!");
-    } else if (age<0) {
-        throw new Error("나이는 음수일 수 없습니다!");
-    }
-    console.log(`이름: ${pname}, 나이: ${age}`);
-} catch(e) {
-    console.log(e);
-}
+//     if (Number.isNaN(age)) {
+//         throw new Error("나이는 숫자이어야 합니다!");
+//     } else if (age<0) {
+//         throw new Error("나이는 음수일 수 없습니다!");
+//     }
+//     console.log(`이름: ${pname}, 나이: ${age}`);
+// } catch(e) {
+//     console.log(e);
+// }
+
+/**
+ * 숫자: 숫자형 숫자
+ *       문자형 숫자
+ */
+// document.getElementById('send').addEventListener('click', function(){
+//     let pname = document.getElementById('pname');
+//     let age = document.getElementById('age');
+
+//     try {    
+//         if (!Number.isNaN(Number(pname.value))){
+//             throw new Error("이름은 숫자일 수 없습니다!");
+//         }
+        
+//         if (Number.isNaN(Number(age.value))) {
+//             throw new Error("나이는 숫자이어야 합니다!");
+//         } else if (age.value < 0) {
+//             throw new Error("나이는 음수일 수 없습니다!");
+//         }        
+//         document.getElementById('result').innerHTML = (`이름: ${pname.value}, 나이: ${age.value}`);
+//         pname.value = '';
+//         age.value = '';
+//     } catch(e) {
+//         document.getElementById('result').innerHTML = e;
+//     }
+// });

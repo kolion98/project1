@@ -1,0 +1,14 @@
+#view {
+    display: block;
+    width:72.4vw;
+    height: 75vh;
+    border: 1px solid silver;
+    margin-bottom: 3px;
+}
+
+.layout {
+    display: inline-block;
+    width: 24vw;
+    height: 20vh;
+    margin: auto;
+}
