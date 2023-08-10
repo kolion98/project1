@@ -12,12 +12,13 @@
  */
 
 //'추가'버튼 클릭 이벤트
-document.getElementById('add').addEventListener('click', function() {
+document.getElementById('add').addEventListener('click', function(event) {
   let new_input = document.getElementById('new_input');
   let selector = document.getElementById('left_selector');
   let data = new_input.value;
   
   if(data){
+    event.preventDefault();
     let ele_option = document.createElement('option');
     let txt = document.createTextNode(data);
     ele_option.appendChild(txt);
@@ -30,6 +31,7 @@ document.getElementById('add').addEventListener('click', function() {
 
 //엔터를 통한 '추가'
 document.getElementById('new_input').addEventListener('keyup', function(event) {
+  event.preventDefault();
   if(event.key === 'Enter') {
     if(document.getElementById('new_input').value) {
       event.preventDefault();
@@ -74,13 +76,17 @@ document.getElementById('RtoL_btn').addEventListener('click', function() {
 document.getElementById('left_selector').addEventListener('dblclick', function(event) {
   event.preventDefault();
   let option_target = event.target;
-  console.log(event);
-  console.log(event.target);
-  option_target.remove();
+
+  //option_target.remove();
+  let ele_parent = option_target.parentElement;
+  ele_parent.removeChild(option_target);
 });
 
 document.getElementById('right_selector').addEventListener('dblclick', function(event) {
   event.preventDefault();
   let option_target = event.target;
-  option_target.remove();
+  //option_target.remove();
+
+  let ele_parent = option_target.parentElement;
+  ele_parent.removeChild(option_target);
 });

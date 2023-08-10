@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="js/accordian.js"></script>
+    <style>
+        button {
+            background-color: skyblue;
+            border: none;
+            width: 100vw;
+            height: 10vh;
+            text-align: left;
+            text-indent: 5px;
+            font-size: larger;
+            cursor: pointer;
+        }
+
+        .panel {
+            width: 100vw;
+            max-height: 0;
+            overflow: hidden;
+            transition: 0 0.2s ease-out;
+        }
+
+        p {
+            margin: 0;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            text-indent: 5px;
+        }
+
+        .active, .accordian:hover {
+            background-color: rgb(38, 38, 177);
+            color: white;
+        }
+
+        /* .accordian {
+            background-color: lightgray;
+            color: black;
+            padding: 5vh 5vw;
+            width: 100%;
+            border: 1px solid silver;
+            cursor: pointer;
+        }
+
+        .panel {
+            padding: 0 2vw;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        } */
+
+    </style>
+</head>
+<body>
+    <button type="button" class="accordian">section1</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta harum enim sit, id non culpa eos voluptates sed nihil aspernatur vitae repellendus tenetur itaque voluptas hic assumenda! Animi, esse explicabo.</p>
+    </div>
+    <button type="button" class="accordian">section2</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta harum enim sit, id non culpa eos voluptates sed nihil aspernatur vitae repellendus tenetur itaque voluptas hic assumenda! Animi, esse explicabo.</p>
+    </div>
+    <button type="button" class="accordian">section3</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta harum enim sit, id non culpa eos voluptates sed nihil aspernatur vitae repellendus tenetur itaque voluptas hic assumenda! Animi, esse explicabo.</p>
+    </div>
+</body>
+</html>
