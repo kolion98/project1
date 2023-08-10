@@ -40,5 +40,11 @@ ele_li.forEach(item=> {
     }
 })
 
+//document.getElementById('aaa').innerHTML = "<p>hello</p>"; //엘리먼트 인식O
+document.getElementById('aaa').textContent = "<p>hello</p>"; //엘리먼트 인식X
+
+
+
+
 
 

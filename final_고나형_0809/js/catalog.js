@@ -1,3 +1,4 @@
+"use strict"
 /**
  * 금요일 12시
  * 하단의 스크롤 네모는 selector, option: multiple, size=10
@@ -71,6 +72,7 @@ document.getElementById('RtoL_btn').addEventListener('click', function() {
 
 //더블클릭해서 element 지우기
 document.getElementById('left_selector').addEventListener('dblclick', function(event) {
+  event.preventDefault();
   let option_target = event.target;
   console.log(event);
   console.log(event.target);
@@ -78,6 +80,7 @@ document.getElementById('left_selector').addEventListener('dblclick', function(e
 });
 
 document.getElementById('right_selector').addEventListener('dblclick', function(event) {
+  event.preventDefault();
   let option_target = event.target;
   option_target.remove();
 });
