@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.tab {
+    width: 80vw;
+}
+
+.tablist {
+    border-bottom: 1px solid silver;
+}
+
+ul li {
+    display: inline;
+    list-style: none;
+}
+
+.tabpanel {
+    position: absolute;
+    top: 10vh;
+    width: 70vw;
+    height: 40vh;
+    border-bottom: 1px solid silver;
+    display: none;
+}
+
+ul li a {
+    display: inline-block;
+    padding: 1vh 3vw 0vh 5vw;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: black;
+}
+
+.tabpanel h2, .tabpanel p {
+    margin-left: 40px;
+}
+
+.visit {
+    display: block;
+}
+
+.bgpanel {
+    background-color: darkorchid;
+    color: white;
+}
+
+/* ul.tablist {
+    list-style: none;
+    padding: 0;
+    border-bottom: 1px solid silver;
+    width: 63vw;
+}
+
+.tabItem {
+    display: inline;    
+    background-color: skyblue;
+}
+
+.tabItem a {
+    width: 5vw;
+    height: 5vh;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+    font-size: x-large;
+    padding-top: 10px;
+}
+
+.tabpanel {
+    position: absolute;
+
+} */
