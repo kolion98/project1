@@ -15,13 +15,16 @@ document.getElementById('add').addEventListener('click', function() {
   let new_input = document.getElementById('new_input');
   let selector = document.getElementById('left_selector');
   let data = new_input.value;
-
-  let ele_option = document.createElement('option');
-  let txt = document.createTextNode(data);
-  ele_option.appendChild(txt);
-
-  selector.appendChild(ele_option);
-  new_input.value = '';
+  
+  if(data){
+    let ele_option = document.createElement('option');
+    let txt = document.createTextNode(data);
+    ele_option.appendChild(txt);
+    console.log("add");
+  
+    selector.appendChild(ele_option);
+    new_input.value = '';
+  }
 });
 
 //엔터를 통한 '추가'
